@@ -1,0 +1,66 @@
+{
+  "extensionName": {
+    "message": "JIRA-work-tools",
+    "description": "扩展名称"
+  },
+  "extensionDescription": {
+    "message": "JIRA工具",
+    "description": "扩展描述"
+  },
+  "headerKey": {
+    "message": "编号",
+    "description": "任务编号列标题"
+  },
+  "headerIssueType": {
+    "message": "类型",
+    "description": "任务类型列标题"
+  },
+  "headerSummary": {
+    "message": "摘要",
+    "description": "任务摘要列标题"
+  },
+  "headerStatus": {
+    "message": "状态",
+    "description": "任务状态列标题"
+  },
+  "headerBeginDate": {
+    "message": "开始日期",
+    "description": "开始日期列标题"
+  },
+  "headerTestingDate": {
+    "message": "测试日期",
+    "description": "测试日期列标题"
+  },
+  "headerReleaseDate": {
+    "message": "预计发布日期",
+    "description": "预计发布日期列标题"
+  },
+  "filterKey": {
+    "message": "筛选编号...",
+    "description": "编号筛选框占位符"
+  },
+  "filterIssueType": {
+    "message": "筛选类型...",
+    "description": "类型筛选框占位符"
+  },
+  "filterSummary": {
+    "message": "筛选摘要...",
+    "description": "摘要筛选框占位符"
+  },
+  "filterStatus": {
+    "message": "筛选状态...",
+    "description": "状态筛选框占位符"
+  },
+  "filterBeginDate": {
+    "message": "筛选开始日期...",
+    "description": "开始日期筛选框占位符"
+  },
+  "filterTestingDate": {
+    "message": "筛选测试日期...",
+    "description": "测试日期筛选框占位符"
+  },
+  "filterReleaseDate": {
+    "message": "筛选预计发布日期...",
+    "description": "预计发布日期筛选框占位符"
+  }
+}

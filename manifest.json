@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "JIRA-work-tools",
+  "version": "1.0",
+  "description": "JIRA工具",
+  "default_locale": "zh_CN",
+  "permissions": ["storage"],
+  "host_permissions": ["http://jira.myhexin.com/*"],
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {},
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>JIRA Work Tools 设置</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"], input[type="password"], textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    textarea {
+      height: 100px;
+    }
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .setup-message {
+      background-color: #e7f3fe;
+      border-left: 6px solid #2196F3;
+      margin-bottom: 15px;
+      padding: 10px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>JIRA Work Tools 设置</h1>
+  <div id="setupMessage" class="setup-message">
+    欢迎使用 JIRA Work Tools！请配置以下设置以开始使用。
+  </div>
+  <div class="form-group">
+    <label>
+      <input type="checkbox" id="enableNewTab">
+      Enable custom new tab page
+    </label>
+  </div>
+  <div class="form-group">
+    <label for="jiraUrl">Jira URL:</label>
+    <input type="text" id="jiraUrl">
+  </div>
+  <div class="form-group">
+    <label for="jiraApiToken">Jira API Token:</label>
+    <input type="password" id="jiraApiToken">
+  </div>
+  <div class="form-group">
+    <label for="jiraJql">Jira JQL:</label>
+    <textarea id="jiraJql"></textarea>
+  </div>
+  <button id="saveButton">Save Settings</button>
+  <script src="options.js"></script>
+</body>
+</html>

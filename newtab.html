@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>新标签页 - JIRA 工作工具</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      color: #333;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    th:hover {
+      background-color: #45a049;
+    }
+    th::after {
+      content: '\00a0\25B2\25BC';
+      font-size: 0.8em;
+      color: rgba(255,255,255,0.5);
+    }
+    th.asc::after {
+      content: '\00a0\25B2';
+      color: white;
+    }
+    th.desc::after {
+      content: '\00a0\25BC';
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .filter-input {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    .filter-row th {
+      padding: 5px;
+      background-color: #e0e0e0;
+    }
+    .filter-row th::after {
+      content: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>JIRA任务列表</h1>
+  <table id="jiraTasks">
+    <thead>
+      <tr>
+        <th data-sort="key" id="headerKey"></th>
+        <th data-sort="issuetype" id="headerIssueType"></th>
+        <th data-sort="summary" id="headerSummary"></th>
+        <th data-sort="status" id="headerStatus"></th>
+        <th data-sort="beginDate" id="headerBeginDate"></th>
+        <th data-sort="testingDate" id="headerTestingDate"></th>
+        <th data-sort="releaseDate" id="headerReleaseDate"></th>
+      </tr>
+      <tr class="filter-row">
+        <th><input type="text" class="filter-input" data-column="key" id="filterKey"></th>
+        <th><input type="text" class="filter-input" data-column="issuetype" id="filterIssueType"></th>
+        <th><input type="text" class="filter-input" data-column="summary" id="filterSummary"></th>
+        <th><input type="text" class="filter-input" data-column="status" id="filterStatus"></th>
+        <th><input type="text" class="filter-input" data-column="beginDate" id="filterBeginDate"></th>
+        <th><input type="text" class="filter-input" data-column="testingDate" id="filterTestingDate"></th>
+        <th><input type="text" class="filter-input" data-column="releaseDate" id="filterReleaseDate"></th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <script src="newtab.js"></script>
+</body>
+</html>
